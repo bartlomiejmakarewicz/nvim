@@ -6,6 +6,11 @@ return {
         jsonnet_ls = {},
         helm_ls = {},
       },
+      setup = {
+        rust_analyzer = function()
+          return true
+        end,
+      },
     },
   },
   {

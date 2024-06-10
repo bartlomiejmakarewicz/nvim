@@ -1,6 +1,7 @@
 return {
   {
     "christoomey/vim-tmux-navigator",
+    enabled = true,
     keys = {
       { "<C-h>", "<cmd>TmuxNavigateLeft<cr>", desc = "Go to left window", silent = true },
       { "<C-j>", "<cmd>TmuxNavigateDown<cr>", desc = "Go to down window", silent = true },

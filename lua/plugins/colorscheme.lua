@@ -1,5 +1,4 @@
 local mc = {
-  -- fade_accent = "#947538",
   fade_accent = "#DD5D1E",
   accent = "#BA9B47",
   black = "#000000",
@@ -31,6 +30,9 @@ return {
         FlashLabel = { fg = mc.black, bg = mc.flash_label, bold = true },
         FlashMatch = { fg = mc.black, bg = mc.highlight_bg },
         FlashCurrent = { fg = mc.black, bg = mc.fade_accent, bold = true },
+
+        -- LspInlatyHint --
+        LspInlayHint = { fg = mc.fade_accent },
       },
     },
   },
@@ -45,7 +47,8 @@ return {
   {
     "levouh/tint.nvim",
     name = "tint",
-    -- enabled = false,
+
+    enabled = true,
     lazy = false,
     config = true,
     priority = 998,

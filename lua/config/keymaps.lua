@@ -17,7 +17,7 @@ vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
--- Dunno Yo
+-- Don't enter EX mode
 vim.keymap.set("n", "Q", "<nop>")
 
 -- Choose which LSP client to stop if multiple are running
