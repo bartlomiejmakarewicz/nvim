@@ -6,20 +6,18 @@ local mc = {
   bg = "#1F2430",
   highlight_bg = "#6E768A",
   flash_label = "#FF9E66",
+  inlay_hint = "#3C7B8D",
 }
 
 return {
   {
     "Shatur/neovim-ayu",
     name = "ayu",
-    -- enabled = false,
-    lazy = false,
-    priority = 999,
     opts = {
       mirage = true,
       overrides = {
         NormalNC = { bg = mc.normal_nc },
-        LineNR = { fg = mc.fade_accent },
+        LineNr = { fg = mc.fade_accent },
 
         -- Raw search groups
         Search = { fg = mc.black, bg = mc.fade_accent },
@@ -31,8 +29,7 @@ return {
         FlashMatch = { fg = mc.black, bg = mc.highlight_bg },
         FlashCurrent = { fg = mc.black, bg = mc.fade_accent, bold = true },
 
-        -- LspInlatyHint --
-        LspInlayHint = { fg = mc.fade_accent },
+        LspInlayHint = { fg = mc.inlay_hint },
       },
     },
   },
@@ -47,18 +44,8 @@ return {
   {
     "levouh/tint.nvim",
     name = "tint",
-
-    enabled = true,
-    lazy = false,
     config = true,
-    priority = 998,
     -- opts = { tint = -80, saturation = 0.4 },
-  },
-  {
-    "folke/flash.nvim",
-    enabled = true,
-    lazy = false,
-    priority = 1000,
   },
   {
     "folke/tokyonight.nvim",
